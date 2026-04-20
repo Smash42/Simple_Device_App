@@ -1,6 +1,12 @@
 import { Stack } from "expo-router";
-import './globals.css';
+import React from "react";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import "./globals.css";
 
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <GestureHandlerRootView className="flex-1">
+      <Stack />
+    </GestureHandlerRootView>
+  );
 }
